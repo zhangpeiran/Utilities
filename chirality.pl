@@ -12,7 +12,7 @@ $_=<FILE>;
 printf($_);
 $_=<FILE>;
 printf($_);
-for($i=1;$i<$linenumber;$i++)
+for($i=0;$i<$linenumber;$i++)
 {
 #printf("The chirality is : %d \n",$chirality[$i]);
 $_=<FILE>;
@@ -30,6 +30,7 @@ $linenumber = $buffer[0];
 open(FILE,"$_[0]");
 while($_=<FILE>){
 if(/Chiralities/) {
+$_=<FILE>;
 for($i=0;$i<$linenumber;$i++) {
 $_=<FILE>;
 @line=split;
