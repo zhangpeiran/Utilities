@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-#
+#You need to put the WT.out file and Nodes.dat file together which from chirality calculation and findnodes calculation respectively. 
 
 $WT="WT.out";
 $command = readpipe("wc -l ./Nodes.dat");
